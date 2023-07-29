@@ -1,0 +1,54 @@
+.h-wellcome{ 
+  background-color: rgb(10, 10, 10);
+  color: aliceblue;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.menu {
+  width: 100%;
+  border: solid 1px black;
+  box-shadow: 2px 0px 2px 3px rgba(0, 0, 0, 0.356)
+}
+
+.fix-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.menu > * {
+  border: none;
+  width: 50%;
+  font-size: 25px;
+}
+
+@keyframes apear {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: gray;
+  }
+}
+
+.active {
+  animation: apear 0.5s;
+  background-color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  color: white;
+  background-color: rgb(10, 10, 10);
+  padding: 10px;
+}
+

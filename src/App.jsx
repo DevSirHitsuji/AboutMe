@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Octokit } from 'octokit'
+import "dotenv"
 
 import './App.css'
 import About from './components/About/About'

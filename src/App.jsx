@@ -13,7 +13,7 @@ function App() {
 
   async function getRepos() {
       const octokit = new Octokit({
-          auth: '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'
+          auth: process.env.TOKEN
       })
 
       const res = await octokit.request('GET /users/{username}/repos', {

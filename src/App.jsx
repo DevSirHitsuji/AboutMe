@@ -6,7 +6,6 @@ import './App.css'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 
-
 function App() {
   const [screen, setScreen] = useState(1)
   const [active, setActive] = useState(1)
@@ -18,7 +17,7 @@ function App() {
       })
 
       const res = await octokit.request('GET /users/{username}/repos', {
-          username: 'DevSirHitsuji', 
+          username: 'GustavoSilva2511', 
           headers: {
               'X-Github-Api-Version': '2022-11-28' 
           }
